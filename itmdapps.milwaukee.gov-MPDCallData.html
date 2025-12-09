@@ -1,9 +1,809 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>502 Proxy Error</title>
-</head><body>
-<h1>Proxy Error</h1>
-<p>The proxy server received an invalid
-response from an upstream server.<br />
-The proxy server could not handle the request<p>Reason: <strong>DNS lookup failure for: webapp02.milwaukee.gov</strong></p></p>
-</body></html>
+<!DOCTYPE HTML>
+
+
+
+
+
+
+
+<html>
+
+	<head>
+		<title>Milwaukee Police Department: Call for Service</title>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='/ItmdScripts/css/redesign.css' type='text/css' /><link rel='stylesheet' href='/ItmdScripts/css/city-various.css' type='text/css' /><link rel='stylesheet' href='/KWATClient/v8/css/mke-application.css' /><link rel='stylesheet' href='/KWATClient/v8/css/mke-application_styles.css' /><script src='/ItmdScripts/js/jquery.min.js'></script><script src='/ItmdScripts/js/message.js'></script><script src='/ItmdScripts/js/mil-default.js'></script>
+	</head>
+	<body>
+		<div id='bg-div'><div data-role='page' class='main'><div id='headerWrapper' style='position:relative;'><div id='headerWrapperInside'><div id='topNavWrapper'><div id='topControls'><div class='siteBounds'><ul class='BackToMilwaukee'><li><a target='_blank' rel='noopener noreferrer' href='https://city.milwaukee.gov' tabindex='0'>City of Milwaukee</a></li></ul><ul><li class='topSub'><a linktype='2' target='_self' tabindex='0'>Directory</a></li><li class='topSub'><a linktype='2' target='_self' tabindex='0' href='https://city.milwaukee.gov/Information-and-Services/Residents'>Residents</a></li><li class='topSub'><a linktype='2' target='_self' tabindex='0' href='https://city.milwaukee.gov/Information-and-Services/Business'>Businesses</a></li><li class='topSub'><a linktype='2' target='_self' tabindex='0' href='https://city.milwaukee.gov/News-Events'>News &amp; Events</a></li><li class='topSub'><a linktype='2' tabindex='0' target='_self' href='https://iframe.publicstuff.com/#?client_id=1000167'><em class='fa fa-medium fa-mouse-pointer'>&nbsp;</em>CLICK or <em class='fa fa-lg fa-mobile-phone'>&nbsp;</em>CALL for Action</a></li><li class='translateLink topSub'><div id='google_translate_element' class=''><div class='skiptranslate goog-te-gadget' dir='ltr' style=''><div id=':0.targetLanguage' class='goog-te-gadget-simple' style='white-space: nowrap;'> <img src='https://www.google.com/images/cleardot.gif' class='goog-te-gadget-icon' alt='' style='background-image: url("https://translate.googleapis.com/translate_static/img/te_ctrl3.gif"); background-position: -65px 0px;'> <span style='vertical-align: middle;'> <a aria-haspopup='true' href='javascript:void(0)'><em class='fa fa-language fa-1'>&nbsp;</em>Translate</a> </span></div></div></div></li></ul><div id='actionLinks'></div></div></div></div><div class='heading'>Dispatched Calls for Service</div>
+		<div class='content' style='padding: 5px;'>
+			<p>This page displays a summary of Calls for Service made to a 911 operator and dispatched to the Milwaukee Police Department (MPD). Calls displayed represent calls dispatch 30 - 90 minutes prior to the updated date below.</p>
+			<p><strong>If the site is down please contact the Milwaukee Police Department IT Help Desk at <a href = 'mailto: MPDHELP@milwaukee.gov'>MPDHELP@milwaukee.gov</a>.</strong></p>
+			<dl style='margin: 0px;'>
+				<dt><strong>How to modify the list of calls</strong></dt>
+				<dd>
+					<dl style='margin: 0px;'>
+						<dt><strong>To change the Police District...</strong></dt>
+						<dd>Select the MPD Police District from <strong>Police District</strong> drop-down list. For more information, click <a href='//city.milwaukee.gov/Directory/police/Police-Districts.htm' target='_new'>here</a>.</dd>
+						<dt><strong>To update the data...</strong></dt>
+						<dd>Click the <strong>Refresh</strong> button to update the list of calls.</dd>
+						<dd>The system is updated every 5 minutes.</dd>
+						<dt><strong>Not all call types shown</strong></dt>
+					</dl>
+				</dd>
+			</dl>
+			<table style='margin: auto; border-style: none; border-collapse: collapse;'>
+				<thead style='border-style: none; border-collapse: collapse;'>
+					<tr>
+						<th colspan='6'>
+							<form action='index.jsp' method='get'>
+								Police District 
+								<select name='district'>
+									<option value='All' selected='selected'>All</option>
+									<option value='1'>1</option>
+									<option value='2'>2</option>
+									<option value='3'>3</option>
+									<option value='4'>4</option>
+									<option value='5'>5</option>
+									<option value='6'>6</option>
+									<option value='7'>7</option>
+								</select>
+								<input type='submit' value='Refresh'/> Refreshed: 12/09/2025 05:32:35 PM
+							</form>
+						</th>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Call Number</th>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Date/Time</th>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Location</th>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Police District</th>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Nature of Call</th>
+						<th style='border: 1px solid black; border-collapse: collapse;'>Status</th>
+					</tr>
+				</thead>
+				<tbody style='border-style: none; border-collapse: collapse;'>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091157</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 05:02 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:56:33.2667,43:02:41.8126): EST 1136 N 24TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091154</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 05:00 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2924 N VEL R PHILLIPS AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Missing Person-Report</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091151</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:59 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>S 60TH ST/W MORGAN AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Reckless Vehicle</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091152</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:59 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>1955 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091152</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:59 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>1955 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091153</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:59 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:56:05.9210,43:01:50.9843): EST 1745 W CANAL ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091146</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:57 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>5925 N 76TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091147</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:57 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3225 W MC KINLEY BLVD MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Follow Up</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091148</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:57 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3811 W LINCOLN AVE MKE: @TOW LOT</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091142</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:56 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>4141 N 64TH ST MKE: @JOHN MARSHALL HIGH SCHOOL</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Investigation</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091143</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:56 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 12TH ST/W VINE ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Unable to Locate Complainant</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091141</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:52 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3022 S 17TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Reckless Vehicle</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091139</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:51 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:56:20.0547,43:02:17.2498): EST 2067 W WISCONSIN AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091138</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:50 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>1826 N 30TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Subject Wanted</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091135</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:48 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:55:52.7883,43:02:22.8478): EST 1485 W WELLS ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091136</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:48 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 76TH ST/W FLORIST AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Traffic Stop</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>City Citation(s) Issued</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091131</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:47 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2620 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091131</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:47 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2620 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091132</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:47 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7602 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091132</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:47 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7602 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091134</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:47 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7454 N 86TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091126</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:46 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2950 S CHASE AVE MKE: @TARGET</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091127</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:46 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>5643 N 60TH ST MKE:UPPER</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Missing Person-Report</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091128</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:46 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:59:59.7716,42:58:49.5831): EST 3521 S HONEY CREEK DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091129</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:46 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>10220 W SILVER SPRING DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091129</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:46 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>10220 W SILVER SPRING DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091123</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:45 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>4057 N GREEN BAY AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091124</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:45 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2920 N VEL R PHILLIPS AVE MKE: @D5</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091124</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:45 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2920 N VEL R PHILLIPS AVE MKE: @D5</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>To be Filed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091121</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:43 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:57:14.7962,42:59:04.5238): EST 3207 W PAINE ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Alarm Sounding - MPD Response</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091118</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:41 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2238 N 34TH ST MKE:UPPER</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Missing Person-Report</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091114</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:40 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3200 W PAINE ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Alarm Sounding - MPD Response</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091115</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:40 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3626 W FOND DU LAC AVE MKE: @D7:10-100</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Return Station</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091116</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:40 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:55:11.1504,43:01:36.6562): EST 682 W VIRGINIA ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091113</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:35 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2605 W CAPITOL DR MKE: @UNIT 205</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Missing Person-Report</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091112</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:34 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:57:06.4044,43:06:50.9364): EST 5299 N 31ST ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091106</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:31 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>5572 N 42ND ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Threat</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091108</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:31 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2213 W NORTH AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Battery/Fight/Assault</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091108</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:31 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2213 W NORTH AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Battery/Fight/Assault</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Unable to Locate Complainant</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091104</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:30 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:57:51.7682,43:07:08.5440): EST 5584 N 42ND ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Unable to Locate Complainant</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091105</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:30 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3701 N 55TH ST MKE:LOWER</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Battery/Fight/Assault</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091105</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:30 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3701 N 55TH ST MKE:LOWER</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Battery/Fight/Assault</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised/Referral</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091101</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:28 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>749 W STATE ST MKE: @D1:FUEL</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Return Station</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091102</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:28 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3626 W FOND DU LAC AVE MKE: @D7:10-100</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Return Station</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091097</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:27 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>906 S CESAR E CHAVEZ DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091099</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:27 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 86TH ST/W GOOD HOPE RD MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091100</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:27 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2604 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091100</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:27 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2604 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091096</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:26 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3027 N HOLTON ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091091</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:25 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>9667 W ARCH AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Entry-Building or Structure</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091091</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:25 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>9667 W ARCH AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Entry-Building or Structure</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised/Referral</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091094</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:25 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>1540 N 32ND ST MKE: @UNIT 601</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091088</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:22 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-88:02:00.8738,43:10:02.2800): EST 9679 W ARCH AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091086</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:20 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:56:51.5727,43:05:21.9478): EST 2751 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091082</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:18 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3616 W GALENA ST MKE:ALLEY</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>3</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Drug Dealing</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Open Investigation</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091079</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:17 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>10202 W SILVER SPRING DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091079</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:17 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>10202 W SILVER SPRING DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091080</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:17 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2920 N VEL R PHILLIPS AVE MKE: @D5:C8</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Follow Up</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091073</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:16 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:55:11.1504,43:01:36.6562): EST 682 W VIRGINIA ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091074</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:16 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>5372 N 37TH ST MKE: @EDISON SCHOOL APARTMENTS:APT 016</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Dead On Entry</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091075</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:16 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2333 N 49TH ST MKE: @D3</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Property Pickup</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091076</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:16 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>1681 S 3RD ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Notification</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Unable to Locate Complainant</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091077</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:16 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:56:51.6183,43:05:22.0098): EST 2753 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091071</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:14 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2222 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091071</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:14 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2222 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091070</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:13 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2120 N FARWELL AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>1</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Follow Up</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091067</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:12 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2219 MIDDLEMASS T</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091067</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:12 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2219 MIDDLEMASS T</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>To be Filed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091068</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:12 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>840 W HISTORIC MITCHELL ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091064</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:11 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 61ST ST/W FLORIST AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Traffic Stop</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091066</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:11 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>4610 W HAMPTON AVE MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Traffic Stop</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091062</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:10 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2012 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091062</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:10 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>2012 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>5</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091063</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:10 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>6010 N 109TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091061</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:09 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-88:00:56.4483,43:11:05.0026): EST 8528 W FAIRY CHASM DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091059</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:07 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 85TH ST/W BROWN DEER RD MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Additional Information</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091055</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:06 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7900 W ACACIA ST MKE: @MILWAUKEE SIGN LANGUAGE ELEMENTARY SCHOOL</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091056</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:06 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7926 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091056</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:06 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>7926 W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Checking Location</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091057</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:06 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-88:00:36.9039,43:08:23.0928): EST 6698 N 80TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>911</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091058</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:06 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>4447 N 64TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Welfare Citizen</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091052</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:05 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3626 W FOND DU LAC AVE MKE: @D7:10-100</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Return Station</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091053</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:05 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3243 S 92ND ST MKE: @UNIT 210</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Advised</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091053</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:05 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3243 S 92ND ST MKE: @UNIT 210</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091054</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:05 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>3006 S 27TH ST MKE: @D6</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>6</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Follow Up</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Assignment Completed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091050</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:04 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>LL(-87:57:22.0863,43:00:12.6466): EST 2272 S 34TH ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>2</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Theft</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091051</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:04 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>6055 N 91ST ST MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>4</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Trouble</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091048</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:03 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>6645 W MILL RD MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>CITY</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Follow Up</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>To be Filed</td>
+					</tr>
+					<tr style='border-style: none; border-collapse: collapse;'>
+						<td style='border: 1px solid black; border-collapse: collapse;'>P2512091047</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>12/09/2025 04:02 PM</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>N 76TH ST/W CAPITOL DR MKE</td>
+						<td style='border: 1px solid black; border-collapse: collapse; text-align: center;'>7</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Reckless Vehicle</td>
+						<td style='border: 1px solid black; border-collapse: collapse;'>Service in Progress</td>
+					</tr>
+				</tbody>
+			</table>
+			<dl style='margin: 0px;'>
+				<dt>PPS</dt>
+				<dd>Prisoner Processing Section</dd>
+				<dt>CJF</dt>
+				<dd>Criminal Justice Facility</dd>
+				<dt>PAB</dt>
+				<dd>Police Administration Building</dd>
+				<dt>PA</dt>
+				<dd>Police Academy</dd>
+				<dt>HOC</dt>
+				<dd>House of Correction</dd>
+				<dt>CIB</dt>
+				<dd>Criminal Investigation Bureau</dd>
+				<dt>MG</dt>
+				<dd>Municipal Garage</dd>
+				<dt>ID</dt>
+				<dd>Identification Division</dd>
+			</dl>
+			<p>
+				<a href='disclaimer.jsp' target='_new'>Disclaimer:</a>This document is intended for illustrative purposes only. The City of Milwaukee makes no warranty, representation or guaranty as to the content, accuracy, timeliness or completeness of any of the information presented, due to data collection methods. The city of Milwaukee assumes no liability.
+			</p>
+			<p>
+				Note: Calls for Service past 90 minutes can be obtained with an Open Record request at: <a href='//city.milwaukee.gov/police/Obtain-Accident-Reports.htm' target='_new'>Open Records</a>
+			</p>
+			<!--  removed per yari 2019.07.03
+			<p style='color: red;'>
+				Experiencing problems with this application? Please check: <a href='//city.milwaukee.gov/PublicApplications/ErrorPage.htm' target='_new'>Dispatched Calls for Service</a> for known service outages.
+			</p>
+			-->
+		</div>
+		<div id='footer' style='color: white;'><p style='text-align:center'><a href='https://city.milwaukee.gov' target='_blank' rel='noopener noreferrer'><img alt='City of Milwaukee' src='/KWATClient/v8/css/images/LogoAndMark_White.png'></a></p><p style='text-align:center'> <a> © 2019 City of Milwaukee </a> </p></div><div style='display: none' id='was-box'>$box$</div><div id='darkbg'></div>
+	</body>
+</html>
